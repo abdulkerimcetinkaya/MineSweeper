@@ -36,20 +36,22 @@ public  class mineSweeper {
             System.out.print("Sütun : ");// Kullanıcıdan sütunu seçmesini iste
             col = scan.nextInt();// Kullanıcının girdiği sütunu al
 
-
-            if (!gameMap[row - 1][col - 1].equals(" - ")){ //Kullanıcının daha önce seçtiği bir koordinatı tekrar seçmemesi için kontrol et
-                System.out.println("Bu koordinat daha önce seçildi.");
-                continue;
-            }
-
-            if ((row - 1 < 0 || row - 1 >= rowNumber) || (col - 1 < 0 || col - 1 >= colNumber)){ // Geçersiz bir koordinat seçilip seçilmediğini kontrol et
+            if ((row  < 0 || row  > rowNumber - 1) || (col  < 0 || col  > colNumber - 1)){ // Geçersiz bir koordinat seçilip seçilmediğini kontrol et
                 System.out.println("Geçersiz koordinat");
                 continue;
+
+            }
+
+
+            if (!gameMap[row][col].equals(" - ")){ //Kullanıcının daha önce seçtiği bir koordinatı tekrar seçmemesi için kontrol et
+                System.out.println("Bu koordinat daha önce seçildi.");
+                continue;
+
             }
 
             // Kazanma ve kaybetme senaryosu
-            if (adminMap[row - 1][col - 1] != " * "){ // Kullanıcının seçtiği koordinatın mayına denk gelip gelmediğini kontrol et
-                checkMine(row - 1,col - 1);
+            if (adminMap[row][col] != " * "){ // Kullanıcının seçtiği koordinatın mayına denk gelip gelmediğini kontrol et
+                checkMine(row ,col );
                 success++;
                 if (success == (rowNumber*colNumber) - mineNumber){ // Eğer hamle sayısı (Success) mayın tarlasının boyutunun mayın sayısı boyutunu çıkarınca ortaya çıkan değere eşitse
                     System.out.println("Win!");
