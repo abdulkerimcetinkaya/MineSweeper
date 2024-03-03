@@ -66,13 +66,13 @@ public  class mineSweeper {
     }
 
     // Komşu mayınları kontrol eden metot
-    public void checkMine(int r, int c){
+    public void checkMine(int row, int column){
         int sayac = 0; // Komşu mayın sayısı
 
-        if (adminMap[r][c].equals(" - ")){ //Seçilen koordinatın mayına denk gelip gelmediğini kontrol et
+        if (adminMap[row][column].equals(" - ")){ //Seçilen koordinatın mayına denk gelip gelmediğini kontrol et
 
-            for (int i = r - 1; i <= r + 1; i++) {// Seçilen koordinatın etrafındaki satırları tarayarak
-                for (int j = c - 1; j <= c + 1; j++) { // Seçilen koordinatın etrafındaki sütunları tarayarak
+            for (int i = row - 1; i <= row + 1; i++) {// Seçilen koordinatın etrafındaki satırları tarayarak
+                for (int j = column - 1; j <= column + 1; j++) { // Seçilen koordinatın etrafındaki sütunları tarayarak
                     if (i >= 0 && i < rowNumber && j >= 0 && j < colNumber) { // Geçerli bir koordinat mı diye kontrol et
                         if (adminMap[i][j].equals(" * ")) { // Eğer komşu bir mayına denk gelinirse
                             sayac++; // Mayın sayısını artır
@@ -80,10 +80,10 @@ public  class mineSweeper {
                     }
                 }
             }
-            gameMap[r][c] = String.valueOf(" " +sayac + " "); // Koordinatın değerini komşu mayın sayısıyla güncelle
+            gameMap[row][column] = String.valueOf(" " +sayac + " "); // Koordinatın değerini komşu mayın sayısıyla güncelle
 
-            if (gameMap[r][c].equals(" - ")){ // Eğer komşu mayın yoksa
-                gameMap[r][c] = " 0 "; // Koordinatın değerini 0 yap
+            if (gameMap[row][column].equals(" - ")){ // Eğer komşu mayın yoksa
+                gameMap[row][column] = " 0 "; // Koordinatın değerini 0 yap
             }
         }
     }
