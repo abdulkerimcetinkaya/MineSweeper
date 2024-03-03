@@ -23,8 +23,6 @@ public  class mineSweeper {
         prepareGame(); // Oyunu hazırla (mayınları yerleştir)
         print(adminMap); // Asıl haritayı yazdır (mayınlarla birlikte)
         gameStart(); // Oyunu başlat
-        //selam
-
     }
 
     // Oyun mantığını işleyen metot
