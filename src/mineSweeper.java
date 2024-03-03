@@ -50,7 +50,7 @@ public  class mineSweeper {
             }
 
             // Kazanma ve kaybetme senaryosu
-            if (adminMap[row][col] != " * "){ // Kullanıcının seçtiği koordinatın mayına denk gelip gelmediğini kontrol et
+            if (!adminMap[row][col].equals(" * ")){ // Kullanıcının seçtiği koordinatın mayına denk gelip gelmediğini kontrol et
                 checkMine(row ,col );
                 success++;
                 if (success == (rowNumber*colNumber) - mineNumber){ // Eğer hamle sayısı (Success) mayın tarlasının boyutunun mayın sayısı boyutunu çıkarınca ortaya çıkan değere eşitse
@@ -80,7 +80,7 @@ public  class mineSweeper {
                     }
                 }
             }
-            gameMap[row][column] = String.valueOf(" " +sayac + " "); // Koordinatın değerini komşu mayın sayısıyla güncelle
+            gameMap[row][column] = " " + sayac + " "; // Koordinatın değerini komşu mayın sayısıyla güncelle
 
             if (gameMap[row][column].equals(" - ")){ // Eğer komşu mayın yoksa
                 gameMap[row][column] = " 0 "; // Koordinatın değerini 0 yap
