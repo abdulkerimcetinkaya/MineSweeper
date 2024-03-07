@@ -66,7 +66,7 @@ Win!
  -  -  -  -  -
  -  -  -  -  -
  -  -  -  -  -                      Boyutumuzun dışında bir değer girdiğimiz için tekrar
- -  -  -  -  -                      giriş istedik
+ -  -  -  -  -                      giriş istedi
 Satır: 6
 Sütun: 6
 Invalid coordinate.
@@ -75,7 +75,7 @@ Invalid coordinate.
  -  1  -  -  -
  -  -  2  -  -
  -  -  -  -  -                      int türünde değer girmediğimiz için yeniden değer girmemiz
- 0  -  -  -  -                      istendi.
+ 0  -  -  -  -                      istedi.
 Row Number: *
 You entered the wrong value, please enter an integer!
 
