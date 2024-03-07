@@ -36,11 +36,15 @@ public  class mineSweeper {
             row = scan.nextInt();
             System.out.print("Sütun: ");
             col = scan.nextInt();
-            
+
+            if ((row  < 0 || row  > rowNumber - 1) || (col  < 0 || col  > colNumber - 1)){ // Geçersiz bir koordinat seçilip seçilmediğini kontrol et
+                System.out.println("Geçersiz koordinat");
+                continue;
+            }
+
             if (!gameMap[row][col].equals(" - ")){ //Kullanıcının daha önce seçtiği bir koordinatı tekrar seçmemesi için kontrol et
                 System.out.println("Bu koordinat daha önce seçildi.");
                 continue;
-
             }
 
             // Kazanma ve kaybetme senaryosu
