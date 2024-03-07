@@ -22,9 +22,6 @@ Oyun sırasında sizden her defasında bir satır ve bir sütun koordinatı girm
 Bu kurallara göre, haritadaki tüm boş kutuları bulmaya çalışarak oyunu tamamlayabilirsiniz. Başarılar!
 
 ----------------------------------------------------------------------------------------------------
-Enter number of rows : 5
-Enter number of column : 5
-
 ## Oyundan Görüntüler##
 
 Enter number of rows : 5
