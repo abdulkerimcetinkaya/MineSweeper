@@ -1,3 +1,4 @@
+
 import java.util.Random; // Rastgele sayı üretmek için gerekli kütüphane
 import java.util.Scanner; // Kullanıcı girişi almak için gerekli kütüphane
 
@@ -27,22 +28,15 @@ public  class mineSweeper {
 
     // Oyun mantığını işleyen metot
     public void gameStart(){
-        int row,col,success = 0; // Kullanıcının seçtiği satır, sütun ve başarılı hamle sayısı değişkenleri
+        int row = 0,col = 0,success = 0; // Kullanıcının seçtiği satır, sütun ve başarılı hamle sayısı değişkenleri
         System.out.println("Oyun başladı!");
         while (game){ // game 'true' olduğu sürece devam et
             print(gameMap); // Mevcut oyun durumunu yazdır
-            System.out.print("Satır : ");// Kullanıcıdan satırı seçmesini iste
-            row = scan.nextInt();// Kullanıcının girdiği satırı al
-            System.out.print("Sütun : ");// Kullanıcıdan sütunu seçmesini iste
-            col = scan.nextInt();// Kullanıcının girdiği sütunu al
-
-            if ((row  < 0 || row  > rowNumber - 1) || (col  < 0 || col  > colNumber - 1)){ // Geçersiz bir koordinat seçilip seçilmediğini kontrol et
-                System.out.println("Geçersiz koordinat");
-                continue;
-
-            }
-
-
+            System.out.print("Satır: ");
+            row = scan.nextInt();
+            System.out.print("Sütun: ");
+            col = scan.nextInt();
+            
             if (!gameMap[row][col].equals(" - ")){ //Kullanıcının daha önce seçtiği bir koordinatı tekrar seçmemesi için kontrol et
                 System.out.println("Bu koordinat daha önce seçildi.");
                 continue;
