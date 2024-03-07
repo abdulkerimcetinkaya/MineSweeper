@@ -47,8 +47,8 @@ Game Over!!!
  -  -  -  -  -
  -  -  -  -  -
  -  -  -  -  -
- -  -  -  -  -                      Seçtiğimiz koordinat daha önce seçildiği için bizden tekrar giriş istedi.
- -  -  -  0  -
+ -  -  -  -  -                      Seçtiğimiz koordinat daha önce seçildiği için bizden tekrar
+ -  -  -  0  -                      giriş istedi.
 Satır: 3
 Sütun: 4
 This coordinate you chose before
