@@ -11,7 +11,7 @@ etkisiz hale getirebilir ve oyunu tamamlayabilirsiniz. İyi eğlenceler!
 
 #Çalışma Mantığı#
 Mayın Tarlası oyunu başlangıçta haritanın boyutunu ayarlamak için satır ve sütun sayılarını(int tipinde) girmenizi istiyor.
-Harita boyutunu girdikten sonra, bombalar (girilen sayının çeyreği kadar) rastgele haritaya yerleştirilir ve oyun başlar.
+Harita boyutunu girdikten sonra, bombalar (harita boyutunun çeyreği kadar) rastgele haritaya yerleştirilir ve oyun başlar.
 Oyun sırasında sizden her defasında bir satır ve bir sütun koordinatı girmeniz istenir.
 
 - Eğer girdiğiniz koordinat bir mayına denk gelirse, oyunu kaybedersiniz.
