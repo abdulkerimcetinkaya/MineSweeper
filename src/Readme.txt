@@ -35,12 +35,22 @@ Oyun başladı!
 Satır: 2
 Sütun: 2
 -----------------------------------------------------------------------------------------------------
+ -  1  -  0  -
+ -  -  -  -  -
+ -  2  -  -  1
+ -  -  1  -  -                      Seçtiğimiz koordinatta bomba olduğu için kaybettik
+ -  -  -  -  -
 Satır: 3
-Sütun: 3                            Seçtiğimiz koordinatta bomba olduğu için kaybettik
+Sütun: 3
 Game Over!!!
 -----------------------------------------------------------------------------------------------------
+ -  -  -  -  -
+ -  -  -  -  -
+ -  -  -  -  -
+ -  -  -  -  -                      Seçtiğimiz koordinat daha önce seçildiği için bizden tekrar giriş istedi.
+ -  -  -  0  -
 Satır: 3
-Sütun: 4                            Seçtiğimiz koordinat daha önce seçildiği için bizden tekrar giriş istedi.
+Sütun: 4
 This coordinate you chose before
 -----------------------------------------------------------------------------------------------------
  1  2  -  1  0
