@@ -41,7 +41,7 @@ Game Over!!!
 -----------------------------------------------------------------------------------------------------
 Satır: 3
 Sütun: 4                            Seçtiğimiz koordinat daha önce seçildiği için bizden tekrar giriş istedi.
-Bu koordinat daha önce seçildi.
+This coordinate you chose before
 -----------------------------------------------------------------------------------------------------
  1  2  -  1  0
  -  3  2  1  0
@@ -55,8 +55,17 @@ Win!
  -  -  -  -  -
  -  -  -  -  -
  -  -  -  -  -
- -  -  -  -  -                      Boyutumuzun dışında bir değer girdiğimiz için geçersiz koordinat yazdırdık
- -  -  -  -  -                      ve tekrar giriş istedik
+ -  -  -  -  -                      Boyutumuzun dışında bir değer girdiğimiz için tekrar
+ -  -  -  -  -                      giriş istedik
 Satır: 6
 Sütun: 6
-Geçersiz koordinat
+Invalid coordinate.
+-----------------------------------------------------------------------------------------------------
+ -  -  -  -  -
+ -  1  -  -  -
+ -  -  2  -  -
+ -  -  -  -  -                      int türünde değer girmediğimiz için yeniden değer girmemiz
+ 0  -  -  -  -                      istendi.
+Row Number: *
+You entered the wrong value, please enter an integer!
+
