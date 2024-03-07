@@ -27,12 +27,16 @@ Enter number of column : 5
 
 ## Oyundan Görüntüler##
 
+Enter number of rows : 5
+Enter number of column : 5
 Oyun başladı!
  -  -  -  -  -
  -  -  -  -  -
- -  -  -  -  -                      Oyunumuz başladı bütün kutular kapalı
  -  -  -  -  -
- -  -  -  -  -
+ -  -  -  -  -                      Oyunumuzu girdiğimiz değerlere göre boyutunu ayarlayarak başlattık
+ -  -  -  -  -                      ve kullanıcıdan koordinat girmesini istedik
+Satır: 2
+Sütun: 2
 -----------------------------------------------------------------------------------------------------
 Satır: 3
 Sütun: 3                            Seçtiğimiz koordinatta bomba olduğu için kaybettik
