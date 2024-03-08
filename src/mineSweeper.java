@@ -23,7 +23,7 @@ public  class mineSweeper { // TEMEL FONKSİYONLAR - 5.MADDE
     // Oyunu başlatmak için metot
     public void run(){
         prepareGame(); // Oyunu hazırla (mayınları yerleştir)
-        print(adminMap); // Asıl haritayı yazdır (mayınlarla birlikte)
+
         gameStart(); // Oyunu başlat
     }
 
@@ -70,11 +70,13 @@ public  class mineSweeper { // TEMEL FONKSİYONLAR - 5.MADDE
                 success++; // başarılı hamle sayısını 1 artır.
                 if (success == (rowNumber*colNumber) - mineNumber){ // Eğer hamle sayısı (Success) mayın tarlasının boyutunun mayın sayısı boyutunu çıkarınca ortaya çıkan değere eşitse
                     System.out.println("Win!");
+                    print(adminMap); // Asıl haritayı yazdır (mayınlarla birlikte)
                     break; // döngüyü kır ve oyunu sonlandır.
                 }
             }else { // değilse
                 game = false; // game'i false yap ve oyunu bitir
                 System.out.println("Game Over!!!"); // ekrana game over yazdır
+                print(adminMap); // Asıl haritayı yazdır (mayınlarla birlikte)
             }
         }
     }
@@ -96,9 +98,9 @@ public  class mineSweeper { // TEMEL FONKSİYONLAR - 5.MADDE
             }
             gameMap[row][column] = " " + counter + " "; // Koordinatın değerini komşu mayın sayısıyla güncelle
 
-            if (gameMap[row][column].equals(" - ")){ // Eğer komşu mayın yoksa
-                gameMap[row][column] = " 0 "; // Koordinatın değerini 0 yap
-            }
+//            if (gameMap[row][column].equals(" - ")){ // Eğer komşu mayın yoksa
+//                gameMap[row][column] = " 0 "; // Koordinatın değerini 0 yap
+//            }
         }
     }
 
